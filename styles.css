@@ -31,8 +31,8 @@ body{
 
 .header{
   display: flex;
-  min-height: 10%;
-  max-height: 10%;
+  min-height: 50px;
+  max-height: 50px;
   flex-direction: row;
   background-color: red;
   position: fixed;
@@ -91,7 +91,7 @@ body{
   max-height: 10%;*/
   min-height: 80px;
   height: 80px;
-  justify-content: center;
+  /*justify-content: center;*/
   background-color: black;
   color: white;
 
@@ -113,6 +113,7 @@ body{
 
 .project_name{
   font-size: 30px;
+  font-weight: 400;
   /*max-width: 300px;*/
 
   margin-bottom: 5px;
@@ -178,7 +179,7 @@ width: 100%;
 .bannerdescrip{
   display: flex;
   position: absolute;
-  top: 600px;
+  top: 500px;
   width: 400px;
   text-align: center;
   align-self: center;
@@ -187,16 +188,25 @@ width: 100%;
   font-weight: 100;
 }
 
-.project_left {
+.project_leftleft, .project_leftright {
   width: 30%;
   display: flex;
   flex-direction: column;
-  margin: 0px 30px;
+  /*margin: 0px 30px;*/
   padding: 20px;
   min-width: 250px;
+  font-weight: 100;
   justify-content: center;
 
 
+}
+
+.project_leftright{
+  margin-right: 100px;
+}
+
+.project_leftleft{
+  margin-left: 100px;
 }
 
 .project_right{
@@ -220,7 +230,7 @@ width: 100%;
   object-fit: contain;
   position: absolute;
   align-self: center;
-  top: 250px;
+  top: 150px;
 }
 
 .profilepic{
@@ -231,15 +241,21 @@ width: 100%;
   min-height: 100%;
 }
 
-.bio{
+.bio, .contact{
   display: flex;
   min-width: 100%;
   justify-content: center;
   flex-direction: column;
   margin-top: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 30px;
 }
-.about1, .about2{
+
+.bio{
+  border-bottom: 1px lightgray solid;
+}
+
+
+.about1, .about2, .contact_info{
   display: flex;
   align-self: center;
   margin: 20px;
@@ -268,4 +284,37 @@ width: 100%;
 }
 .livelink:hover{
   cursor: pointer;
+}
+
+.resume{
+  display: flex;
+  align-self: center;
+  position: absolute;
+  top: 600px;
+  font-size: 20px;
+  background-color: #28292b;
+  width: 200px;
+  flex-direction: column;
+justify-content: center;
+/*align-content: center;*/
+color: white;
+text-align: center;
+height: 50px;
+ border-radius: 7px;
+
+}
+.restext{
+  text-decoration: none;
+  color: white;
+}
+.contact_title{
+  display: flex;
+font-size: 30px;
+border-bottom: 1px black solid;
+width: 300px;
+align-self: center;
+justify-content: center;
+margin-top: 30px;
+margin-bottom: 40px;
+padding-bottom: 20px;
 }
