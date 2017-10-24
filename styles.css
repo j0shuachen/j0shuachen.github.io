@@ -3,7 +3,7 @@
 
 html, body {
   display: flex;
-
+  display: -webkit-inline-box;
   min-height: 100%;
   /*max-height: 100%;*/
   min-width: 100%;
@@ -102,6 +102,8 @@ body{
   min-width: 100%;
   max-width: 100%;
   object-fit: cover;
+  /*transform: translate;*/
+
 }
 
 .project_section{
@@ -123,8 +125,9 @@ body{
 }
 
 .clickdown{
+  margin: 20px 0 20px;
   display: flex;
-  position: absolute;
+  /*position: absolute;*/
   font-size: 40px;
   max-width: 20%;
   align-self: center;
@@ -177,8 +180,9 @@ width: 100%;
 }
 
 .bannerdescrip{
+  margin: 20px 0 20px;
   display: flex;
-  position: absolute;
+  /*position: absolute;*/
   top: 500px;
   width: 400px;
   text-align: center;
@@ -222,19 +226,45 @@ width: 100%;
   max-width: 100%;
   object-fit: contain;
 }
+.abbb{
+display: flex;
+align-self: center;
+flex-direction: column;
 
+}
+
+.abcon{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 150px;
+
+}
 .pic{
+  margin: 20px 0 20px;
+  display: -webkit-inline-box;
   display: flex;
+  /*transform: translate(50%,60%);*/
+
   max-width: 300px;
   max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
   object-fit: contain;
-  position: absolute;
+  -webkit-border-radius: 50%;
+
+  /*position: absolute;*/
   align-self: center;
+  /*top: 1.5rem;*/
+  /*right: 40%;*/
   top: 150px;
 }
 
 .profilepic{
+  display: -webkit-inline-box;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+
   max-height: 100%;
   max-width: 100%;
   min-width: 100%;
@@ -313,9 +343,10 @@ width: 100%;
 }
 
 .resume{
+  margin: 20px 0 20px;
   display: flex;
   align-self: center;
-  position: absolute;
+  /*position: absolute;*/
   top: 600px;
   font-size: 20px;
   background-color: #28292b;
