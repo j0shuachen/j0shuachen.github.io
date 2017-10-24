@@ -241,20 +241,46 @@ width: 100%;
   min-height: 100%;
 }
 
-.bio, .contact{
+.bio, .contact, .techholder{
   display: flex;
   min-width: 100%;
   justify-content: center;
   flex-direction: column;
   margin-top: 40px;
   padding-bottom: 30px;
+
 }
 
-.bio{
+
+
+.bio, .contact{
   border-bottom: 1px lightgray solid;
 }
 
+.technologies{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
 
+}
+
+.tech1{
+  display: flex;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.techpic{
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 50%;
+}
 .about1, .about2, .contact_info{
   display: flex;
   align-self: center;
@@ -307,7 +333,7 @@ height: 50px;
   text-decoration: none;
   color: white;
 }
-.contact_title{
+.contact_title, .techtitle{
   display: flex;
 font-size: 30px;
 border-bottom: 1px black solid;
@@ -317,4 +343,9 @@ justify-content: center;
 margin-top: 30px;
 margin-bottom: 40px;
 padding-bottom: 20px;
+}
+
+.techtitle{
+  width: 500px;
+  margin-top: 30px;
 }
