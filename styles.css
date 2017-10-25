@@ -264,7 +264,7 @@ flex-direction: column;
   display: -webkit-inline-box;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-
+  object-fit: cover;
   max-height: 100%;
   max-width: 100%;
   min-width: 100%;
