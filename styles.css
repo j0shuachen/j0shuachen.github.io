@@ -60,12 +60,36 @@ body{
 
 .bodyz{
   display: flex;
+  box-sizing: border-box;
+  /* padding: 100px 0 0 0; */
   flex-direction: column;
   /*min-height: 100%;*/
   max-height: 100%;
-  background-color: red;
+  /* background-color: red; */
+  background-color: rgb(255, 150, 150);
+  background-color: white;
   /*justify-content: center;
   padding-top: 10%;*/
+/* background-image: url('http://res.cloudinary.com/dxeyfggji/image/upload/v1520425696/222ffa101dc6561d6e254cc65174b76d.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-origin: content-box; */
+
+}
+
+.b-image{
+  background-image: url('http://res.cloudinary.com/dxeyfggji/image/upload/v1520427619/2657ac473429f65.jpg');
+  /* background-image: url('http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,h_80/v1520427846/San-Francisco-Skyline-2016011246.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+  /* min-height: 100%; */
+  min-width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  /* padding: 320px 0 0 0; */
 }
 
 .banner{
@@ -74,6 +98,7 @@ body{
   width: 100%;
   background-color: white;
   min-height: 800px;
+  /* top: 50px; */
   opacity: 0.4;
 }
 .projects{
@@ -92,8 +117,11 @@ body{
   min-height: 80px;
   height: 80px;
   /*justify-content: center;*/
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  /* color: white; */
+  background: black;
+
+  /* background-image: url('http://res.cloudinary.com/dxeyfggji/image/upload/v1520428350/San-Francisco-Skyline-2016011246-300px.png'); */
 
 }
 
@@ -102,6 +130,10 @@ body{
   min-width: 100%;
   max-width: 100%;
   object-fit: cover;
+  top: 50px;
+  position: relative;
+  opacity: 0.7;
+  height: 700px;
   /*transform: translate;*/
 
 }
@@ -190,6 +222,9 @@ width: 100%;
   color: white;
   font-size: 18px;
   font-weight: 100;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: black;
 }
 
 .project_leftleft, .project_leftright {
@@ -237,7 +272,7 @@ flex-direction: column;
   position: absolute;
   left: 0;
   right: 0;
-  top: 150px;
+  top: 450px;
 
 }
 .pic{
@@ -263,8 +298,8 @@ flex-direction: column;
 
 .profilepic{
   display: -webkit-inline-box;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
+  /* border-radius: 50%;
+  -webkit-border-radius: 50%; */
   object-fit: cover;
   max-height: 100%;
   max-width: 100%;
