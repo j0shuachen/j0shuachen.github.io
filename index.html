@@ -5,9 +5,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
     $(document).ready(function () {
-        $(".downbutton").click(function () {
+        $(".down-button").click(function () {
             $("html, body").animate({
-              scrollTop: $(".projects").offset().top}, 1000);
+              scrollTop: $(".project-section").offset().top}, 1000);
             });
         });
 
@@ -15,9 +15,9 @@
 
     <script>
     $(document).ready(function () {
-        $(".clickup").click(function () {
+        $(".up-button").click(function () {
             $("html, body").animate({
-              scrollTop: $(".bodyz").offset().top}, 1000);
+              scrollTop: $(".container").offset().top}, 1000);
             });
         });
 
@@ -28,92 +28,93 @@
   <body>
 
 
-    <div class="camp">
+    <div class="window">
       <div class="header">
         <div class="name">J O S H  &nbsp &nbsp C H E N</div>
-        <div class='name'></div>
       </div>
-      <div class="bodyz">
+      <div class="container">
         <div class="banner">
           <div class='b-image'></div>
         </div>
-        <div class='abcon'>
-        <div class='abbb'>
 
-        <div class="bannerdescrip">Hi there, my name is Josh! I'm a software engineer based in the Bay Area, check out my projects below!
+
+        <div class='block-holder'>
+
+        <div class='block-content'>
+
+          <div class='banner-title'>WELCOME</div>
+        <div class="banner-info">
+          Hi there, my name is Josh! I'm a software engineer based in the Bay Area, check out my projects below!
         </div>
 
-        <div class='resume'>
-          <a class='restext' target="_blank" href='http://res.cloudinary.com/dxeyfggji/image/upload/v1508967313/ChenJoshuaRESUME_rpdjip.pdf'> Resume </a>
+          <a class='resume-button' target="_blank" href='http://res.cloudinary.com/dxeyfggji/image/upload/v1508967313/ChenJoshuaRESUME_rpdjip.pdf'> RESUME </a>
 
+          <img class='down-button' src='http://res.cloudinary.com/dxeyfggji/image/upload/v1522986110/circular-down-arrow-button.svg'/>
         </div>
-        <div class="clickdown">
-          <img class='downbutton' src='http://res.cloudinary.com/dxeyfggji/image/upload/v1508785355/arrow_down-512_oy85b2.png'/>
+
+      </div>
         </div>
-        </div>
-        </div>
-        </div>
-        <div class="projects">
-          <div class="project_section">
-            <div class="project_leftleft">
+        <div class="project-section">
+          <div class="project">
+            <div class="project-info">
             <div class="project_name">CliqueUp</div>
-            <div class="project_description">
+            <div class="project-description">
                 CliqueUp is a MeetUp clone that allows users to meet like-minded people who share the same interests and hobbies! Users can create and join their own groups, create or rsvp for group events, and track group member info.
 
           </div>
-          <div class="created_with">Created with Ruby on Rails and React/Redux</div>
+          <div class="created-with">Created with Ruby on Rails and React/Redux</div>
           <a class='livelink' href= 'https://cliquee.herokuapp.com/#/' target="_blank"> Live Link </a>
 
         </div>
-        <div class="project_right">
+        <div class="mb-holder">
           <img class="macbook" src ="http://res.cloudinary.com/dxeyfggji/image/upload/v1508777032/mbframez_valpia.png"/>
         </div>
           </div>
 
-          <div class="project_section">
-            <div class="project_right">
+          <div id='p-flipped' class="project">
+            <div id='i-flipped' class="mb-holder">
               <img class="macbook" src ="http://res.cloudinary.com/dxeyfggji/image/upload/v1510062816/mbframez_copy_5_glnrlw.png"/>
             </div>
-            <div class="project_leftright">
+            <div  class="project-info">
             <div class="project_name">SplatArt</div>
-            <div class="project_description">
+            <div class="project-description">
               SplatArt is a painting app inspired by the great Jackson Pollock! Users can create and download their own masterpieces using Pollock's unique drip-style of painting as well as other neat painting styles!
 
           </div>
-          <div class="created_with">Created with HTML5 and vanilla JavaScript</div>
+          <div class="created-with">Created with HTML5 and vanilla JavaScript</div>
            <a class='livelink' href= 'https://j0shuachen.github.io/splatArt/' target="_blank"> Live Link </a>
 
         </div>
 
           </div>
 
-          <div class="project_section">
+          <div class="project">
 
-            <div class="project_leftleft">
+            <div class="project-info">
             <div class="project_name">FortuneCookiez</div>
-            <div class="project_description">
+            <div class="project-description">
               Fortune Cookiez is a simple app that delivers positive fortunes for its visitors!
           </div>
-          <div class="created_with">Created with Ruby on Rails and React</div>
+          <div class="created-with">Created with Ruby on Rails and React</div>
           <a class='livelink' href= 'https://fortunecookiez.herokuapp.com/#/fortune' target="_blank"> Live Link </a>
 
         </div>
-        <div class="project_right">
+        <div class="mb-holder">
           <img class="macbook" src ="http://res.cloudinary.com/dxeyfggji/image/upload/v1508777033/mbframezfort_ntpldr.png"/>
         </div>
 
           </div>
 
-          <div class="project_section">
-            <div class="project_right">
+          <div id='p-flipped' class="project">
+            <div id='i-flipped' class="mb-holder">
               <img class="macbook" src ="http://res.cloudinary.com/dxeyfggji/image/upload/v1508777869/busview_e5naet_segosj.png"/>
             </div>
-            <div class="project_leftright">
+            <div class="project-info">
             <div class="project_name">TransitNinja</div>
-            <div class="project_description">
+            <div class="project-description">
               Transitninja is an iOS application that allows users to get public transit directions and track bus locations in real-time. It uses the 511.org API to render bus locations on a map.
             </div>
-          <div class="created_with"> Created with MongoDB, Express, React Native, and NodeJS</div>
+          <div class="created-with"> Created with MongoDB, Express, React Native, and NodeJS</div>
           <a class='livelink' href= 'https://j0shuachen.github.io/transit_ninja_demo/' target="_blank"> Demo Page </a>
 
         </div>
@@ -121,18 +122,18 @@
 
           </div>
 
-          <div class="project_section">
+          <div class="project">
 
-            <div class="project_leftright">
+            <div class="project-info">
             <div class="project_name">FlashCards</div>
-            <div class="project_description">
+            <div class="project-description">
               FlashCards is a flash card web app to help with studying
             </div>
-          <div class="created_with"> Created with PostgreSQL, Rails, and React</div>
+          <div class="created-with"> Created with PostgreSQL, Rails, and React</div>
           <a class='livelink' href= 'https://flashxcards.herokuapp.com/#/' target="_blank"> Demo Page </a>
 
         </div>
-        <div class="project_right">
+        <div class="mb-holder">
           <img class="macbook" src ="http://res.cloudinary.com/dxeyfggji/image/upload/v1510061798/mbframez_copy_smliwf.png"/>
         </div>
 
@@ -155,71 +156,48 @@
         </div>
 
 
-        <div class="techholder">
-            <div class="techtitle">Technologies</div>
+        <div class="tech-section">
+            <div class="tech-title">Technologies</div>
         <div class="technologies">
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800956/postgreesql1600_yfbje8.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800956/postgreesql1600_yfbje8.png"/>
 
 
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800782/mongo_viax3a.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800782/mongo_viax3a.png"/>
 
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799723/logo-2582748_960_720_yeyf7u.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799723/logo-2582748_960_720_yeyf7u.png"/>
 
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799771/logo-2582747_960_720_gorrf1.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799771/logo-2582747_960_720_gorrf1.png"/>
 
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799872/raphael_node-js_flat-circle-white-on-black_512x512_s8v61f.png"/>
-          </div>
-        </div>
-         <div class="technologies">
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799872/raphael_node-js_flat-circle-white-on-black_512x512_s8v61f.png"/>
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799938/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67_e3lrjx.png"/>
-          </div>
+
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508799938/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67_e3lrjx.png"/>
 
 
 
 
 
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800341/OYIaJ1KK_400x400_hbhlto.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800341/OYIaJ1KK_400x400_hbhlto.png"/>
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508797496/Ruby_on_Rails-logo_mkbcce.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508797496/Ruby_on_Rails-logo_mkbcce.png"/>
 
 
 
-          <div class="tech1">
-            <img class="techpic" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508797472/1-9hd_8qR0CMZ8L0pVbFLjDw_ec2a1u.png"/>
-          </div>
+            <img class="tech-icon" src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508797472/1-9hd_8qR0CMZ8L0pVbFLjDw_ec2a1u.png"/>
 
 
 
-          <div class="tech1">
-            <img class="techpic"src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800615/code_aiqvwr.png"/>
-          </div>
+            <img class="tech-icon"src="http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,w_100/v1508800615/code_aiqvwr.png"/>
 
         </div>
         </div>
 
-        <div class="clickup">
-          <img class="upbutton" src="http://res.cloudinary.com/dxeyfggji/image/upload/a_180/v1508785355/arrow_down-512_oy85b2.png"/>
-        </div>
+          <img class="up-button" src="http://res.cloudinary.com/dxeyfggji/image/upload/v1522986132/up-arrow-inside-circle.svg"/>
 
 
 
@@ -234,14 +212,3 @@
     </div>
   </body>
 </html>
-
-
-
-<!-- http://res.cloudinary.com/dxeyfggji/image/upload/v1508968094/aglw_gxuuie.jpg -->
-
-
-<!-- http://res.cloudinary.com/dxeyfggji/image/upload/c_scale,h_300,w_300/v1508896866/20170807_000913_copy_jnfgch.jpg -->
-<!-- <div class='pic'>
-   <img class= 'profilepic' src='http://res.cloudinary.com/dxeyfggji/image/upload/v1520425829/boy.svg'/>
-</div> -->
-<!-- <img class="tester" src='   http://res.cloudinary.com/dxeyfggji/image/upload/v1520425696/222ffa101dc6561d6e254cc65174b76d.jpg'/> -->
