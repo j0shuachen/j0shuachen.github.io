@@ -41,7 +41,28 @@ html, body {
   /*background-color: transparent;*/
   background-color: white;
   border-bottom: 1px lightgray solid;
+  justify-content: space-between;
 
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  max-width: 300px;
+  font-weight: 100;
+}
+
+.nav-item:hover{
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.nav-item{
+  font-weight: lighter;
 }
 
 .name{
@@ -50,6 +71,7 @@ html, body {
   align-items: center;
   margin-left: 10px;
   font-weight: 400;
+  min-width: 140px;
 
   /*color: gray;*/
 
@@ -166,22 +188,34 @@ html, body {
   max-width: 50px;
   max-height: 50px;;
   object-fit: contain;
-  margin: 20px 0 20px;
+  /* margin: 20px 0 20px; */
   display: flex;
   /*position: absolute;*/
   font-size: 40px;
-  max-width: 20%;
-  align-self: center;
+  /* max-width: 20%; */
+  /* align-self: center; */
   /*top: 90%;*/
-  top: 725px;
+  /* top: 725px; */
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   /* background: white; */
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  /* min-width: 50px;
+  min-height: 50px; */
 
 }
+
+.button-holder:hover .down-button{
+  /* max-height: 45px;
+  max-width: 45px; */
+  margin:  10px 0 0 0;
+}
+
+ .button-holder .up-button:hover{
+   margin: 0 0 10px 0;
+ }
 
 
 
@@ -191,7 +225,7 @@ html, body {
 }
 
 .down-button{
-  margin: 80px 0;
+  /* margin: 80px 0; */
 }
 
 .linkedin{
@@ -385,7 +419,7 @@ flex-direction: column;
   min-height: 100%;
 }
 
-.bio, .contact, .tech-section{
+.about-section, .contact-section, .tech-section{
   display: flex;
   min-width: 100%;
   justify-content: center;
@@ -397,7 +431,7 @@ flex-direction: column;
 
 
 
-.bio, .contact{
+.about-section, .contact-section{
   border-bottom: 1px lightgray solid;
 }
 
@@ -423,13 +457,14 @@ flex-direction: column;
   min-height: 100px;
   border-radius: 50%;
 }
-.about1, .about2, .contact_info{
+.about1, .about2, .contact-info{
   display: flex;
   align-self: center;
   margin: 20px;
   font-weight: 100;
   width: 50%;
   justify-content: center;
+  color: black;
 }
 
 .about-title{
@@ -485,9 +520,26 @@ flex-direction: column;
 
 }
 
+.button-holder{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
 
 
-.contact_title, .tech-title{
+.resume-button:hover{
+  width: 210px;
+  /* height: 55px; */
+}
+
+
+
+.contact-title, .tech-title{
   display: flex;
 font-size: 30px;
 border-bottom: 1px black solid;
@@ -547,4 +599,24 @@ padding-bottom: 20px;
 .project{
   display: flex;
   border-bottom: 1px lightgray solid;
+}
+
+a{
+  text-decoration: none;
+}
+
+.contact-button{
+  display: flex;
+  box-sizing: border-box;
+  font-weight: 400;
+  background: #28292b;
+  color: white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  align-self: center;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
 }

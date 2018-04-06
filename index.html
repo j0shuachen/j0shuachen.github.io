@@ -9,19 +9,38 @@
             $("html, body").animate({
               scrollTop: $(".project-section").offset().top}, 1000);
             });
-        });
 
-    </script>
-
-    <script>
-    $(document).ready(function () {
-        $(".up-button").click(function () {
+        $("#nav-project").click(function () {
             $("html, body").animate({
-              scrollTop: $(".container").offset().top}, 1000);
+              scrollTop: $(".project-section").offset().top}, 1000);
             });
+
+      $("#nav-about").click(function () {
+          $("html, body").animate({
+            scrollTop: $(".about-section").offset().top-75}, 1000);
+          });
+
+      $("#nav-contact").click(function () {
+          $("html, body").animate({
+            scrollTop: $(".contact-section").offset().top-75}, 1000);
+          });
+
+      $("#nav-tech").click(function () {
+          $("html, body").animate({
+            scrollTop: $(".tech-section").offset().top-75}, 1000);
+          });
+
+      $(".up-button").click(function () {
+          $("html, body").animate({
+            scrollTop: $(".container").offset().top}, 1000);
+          });
+
+
         });
 
     </script>
+
+
     <meta charset="utf-8">
     <title>Josh Chen</title>
   </head>
@@ -31,6 +50,14 @@
     <div class="window">
       <div class="header">
         <div class="name">J O S H  &nbsp &nbsp C H E N</div>
+
+        <div class='nav-bar'>
+          <div id='nav-project' class='nav-item'>projects</div>
+          <div id='nav-about' class='nav-item'>about</div>
+          <div id='nav-contact' class='nav-item'>contact</div>
+          <div id='nav-tech' class='nav-item'>tech</div>
+
+        </div>
       </div>
       <div class="container">
         <div class="banner">
@@ -48,8 +75,9 @@
         </div>
 
           <a class='resume-button' target="_blank" href='http://res.cloudinary.com/dxeyfggji/image/upload/v1508967313/ChenJoshuaRESUME_rpdjip.pdf'> RESUME </a>
-
+          <div class='button-holder'>
           <img class='down-button' src='http://res.cloudinary.com/dxeyfggji/image/upload/v1522986110/circular-down-arrow-button.svg'/>
+        </div>
         </div>
 
       </div>
@@ -163,7 +191,7 @@
 
 
         </div>
-        <div class="bio">
+        <div class="about-section">
           <div class="about-title">About Me</div>
           <div class="about1">
           Born and raised in the Bay Area, technology has always fascinated and intrigued me. When I moved back to the Bay Area after working overseas for a manufacturing company, I decided to take a few programming classes while earning my Green Belt in Six Sigma. It was during these classes that I realized CODING is what I am truly passionate about!
@@ -171,9 +199,10 @@
         <div class="about2">
         I am now pursuing my dream of becoming a software developer, and am currently open to hearing about any software development opportunities. Feel free to reach out if you feel that I would be a good fit for your company!</div>
         </div>
-        <div class="contact">
-          <div class="contact_title">Contact Info</div>
-          <div class="contact_info">whoisjoshuachen@gmail.com </div>
+        <div class="contact-section">
+          <div class="contact-title">Contact Info</div>
+          <a href="mailto:whoisjoshuachen@gmail.com" class="contact-info">whoisjoshuachen@gmail.com </a>
+          <a href='https://goo.gl/forms/rzCEdpazptlERb2s1' class='contact-button'>form</a>
         </div>
 
 
@@ -217,9 +246,10 @@
 
         </div>
         </div>
+        <div class='button-holder'>
 
           <img class="up-button" src="http://res.cloudinary.com/dxeyfggji/image/upload/v1522986132/up-arrow-inside-circle.svg"/>
-
+        </div>
 
 
 
