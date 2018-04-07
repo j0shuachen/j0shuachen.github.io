@@ -533,7 +533,7 @@ flex-direction: column;
 
 
 .resume-button:hover{
-  width: 240px;
+  width: 220px;
   /* height: 55px; */
 }
 
@@ -619,4 +619,8 @@ a{
   align-self: center;
   letter-spacing: 0.1rem;
   font-weight: 400;
+}
+
+.contact-button:hover{
+  width: 220px;
 }
